@@ -14,3 +14,6 @@ vim.o.breakindentopt = "sbr"
 
 -- Set wrap
 vim.wo.wrap = true
+
+-- Ansible-vim
+vim.g.ansible_extra_keywords_highlight = 1
