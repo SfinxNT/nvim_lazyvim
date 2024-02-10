@@ -150,5 +150,9 @@ return {
         tmux = { enabled = true }, -- disables the tmux statusline
       },
     },
+    keys = {
+      -- toggle plugin
+      { "<leader>nz", "<cmd>ZenMode<cr>", desc = "Toggle ZenMode" },
+    },
   },
 }
