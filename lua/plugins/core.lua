@@ -110,6 +110,9 @@ return {
     },
   },
   {
+    "kdheepak/lazygit.nvim",
+  },
+  {
     "folke/zen-mode.nvim",
     dependencies = { "folke/twilight.nvim" },
     event = "VeryLazy",
