@@ -98,6 +98,7 @@ return {
   },
   {
     "shortcuts/no-neck-pain.nvim",
+    event = "VeryLazy",
     opts = {
       width = 120,
       bufferOptionsColors = {
@@ -111,6 +112,7 @@ return {
   },
   {
     "kdheepak/lazygit.nvim",
+    event = "VeryLazy",
   },
   {
     "folke/zen-mode.nvim",
