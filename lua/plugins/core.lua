@@ -102,7 +102,7 @@ return {
     opts = {
       width = 120,
       bufferOptionsColors = {
-        blend = 5,
+        blend = -0.5,
       },
     },
     keys = {
