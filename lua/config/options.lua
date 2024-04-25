@@ -17,3 +17,6 @@ vim.wo.wrap = true
 
 -- Ansible-vim
 vim.g.ansible_extra_keywords_highlight = 1
+
+-- LazyGit one config
+vim.g.lazygit_config = false
