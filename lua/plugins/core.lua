@@ -7,42 +7,6 @@ return {
     },
   },
 
-  -- add pyright to lspconfig
-  {
-    "neovim/nvim-lspconfig",
-    ---@class PluginLspOpts
-    opts = {
-      ---@type lspconfig.options
-      servers = {
-        -- pyright will be automatically installed with mason and loaded with lspconfig
-        pyright = {},
-        dockerls = {},
-        terraformls = {},
-        ansiblels = {
-          filetypes = {
-            "yaml.ansible",
-            "ansible",
-          },
-        },
-        yamlls = {},
-      },
-    },
-  },
-
-  {
-    "nvimtools/none-ls.nvim",
-    optional = true,
-    opts = function(_, opts)
-      local nls = require("null-ls")
-      opts.sources = opts.sources or {}
-      table.insert(opts.sources, nls.builtins.formatting.autoflake)
-      table.insert(opts.sources, nls.builtins.formatting.isort)
-      table.insert(opts.sources, nls.builtins.formatting.black)
-      table.insert(opts.sources, nls.builtins.diagnostics.mypy)
-      table.insert(opts.sources, nls.builtins.diagnostics.ruff)
-    end,
-  },
-
   -- the opts function can also be used to change the default opts:
   {
     "nvim-lualine/lualine.nvim",
@@ -60,10 +24,6 @@ return {
         "stylua",
         "shellcheck",
         "shfmt",
-        "flake8",
-        "autoflake",
-        "isort",
-        "black",
         "mypy",
         "ruff",
         "ansible-language-server",
@@ -81,17 +41,6 @@ return {
     event = "BufReadPost",
   },
 
-  {
-    "stevearc/conform.nvim",
-    optional = true,
-    opts = {
-      formatters_by_ft = {
-        python = { "autoflake", "isort", "black" },
-        yaml = { "yamlfix", "yamlfmt" },
-        go = { "golangci-lint" },
-      },
-    },
-  },
   {
     "shortcuts/no-neck-pain.nvim",
     event = "VeryLazy",
