@@ -60,6 +60,14 @@ return {
     event = "VeryLazy",
   },
   {
+    "folke/snacks.nvim",
+    priority = 1000,
+    lazy = false,
+    opts = {
+      lazygit = { configure = false },
+    },
+  },
+  {
     "folke/zen-mode.nvim",
     dependencies = { "folke/twilight.nvim" },
     event = "VeryLazy",
