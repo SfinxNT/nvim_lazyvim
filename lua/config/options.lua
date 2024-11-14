@@ -19,4 +19,6 @@ vim.wo.wrap = true
 vim.g.ansible_extra_keywords_highlight = 1
 
 -- LazyGit one config
-vim.g.lazygit_config = false
+vim.g.lazygit_floating_window_use_plenary = 0
+vim.g.lazygit_floating_window_scaling_factor = 1
+vim.g.lazygit_floating_window_winblend = 1
