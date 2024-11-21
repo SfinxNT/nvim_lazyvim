@@ -66,7 +66,7 @@ return {
       "LazyGitFilterCurrentFile",
     },
     keys = {
-      { "<leader>gg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
+      { "<leader>gg", "<cmd>LazyGitCurrentFile<cr>", desc = "LazyGit" },
       { "<leader>gf", "<cmd>LazyGitFilterCurrentFile<cr>", desc = "Lazygit Current File History" },
       { "<leader>gl", "<cmd>LazyGitFilter<cr>", desc = "Lazygit Log" },
     },
