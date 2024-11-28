@@ -6,6 +6,9 @@ return {
       colorscheme = "catppuccin-frappe",
     },
   },
+  {
+    "laktak/tome",
+  },
 
   -- the opts function can also be used to change the default opts:
   {
