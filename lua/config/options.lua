@@ -25,3 +25,6 @@ vim.g.lazygit_floating_window_winblend = 0
 
 -- TOME config
 vim.g.tome_no_auto = 1
+
+-- Disable cursorline
+vim.o.cursorline = false
