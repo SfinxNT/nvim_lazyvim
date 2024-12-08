@@ -15,9 +15,6 @@ vim.o.breakindentopt = "sbr"
 -- Set wrap
 vim.wo.wrap = true
 
--- Ansible-vim
-vim.g.ansible_extra_keywords_highlight = 1
-
 -- LazyGit one config
 vim.g.lazygit_floating_window_use_plenary = 0
 vim.g.lazygit_floating_window_scaling_factor = 1
