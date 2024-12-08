@@ -15,11 +15,6 @@ vim.o.breakindentopt = "sbr"
 -- Set wrap
 vim.wo.wrap = true
 
--- LazyGit one config
-vim.g.lazygit_floating_window_use_plenary = 0
-vim.g.lazygit_floating_window_scaling_factor = 1
-vim.g.lazygit_floating_window_winblend = 0
-
 -- TOME config
 vim.g.tome_no_auto = 1
 
