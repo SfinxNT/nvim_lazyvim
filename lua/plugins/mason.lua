@@ -14,6 +14,7 @@ return {
         "yamlfix",
         "yamlfmt",
         "gopls",
+        "shellharden",
       },
     },
   },
