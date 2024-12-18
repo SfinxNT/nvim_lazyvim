@@ -13,9 +13,16 @@ return {
       },
     },
   },
-  { "MeanderingProgrammer/render-markdown.nvim", opts = {
-    code = {
-      style = "language",
+  {
+    "MeanderingProgrammer/render-markdown.nvim",
+    opts = {
+      code = {
+        style = "language",
+      },
     },
-  } },
+  },
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    enabled = false,
+  },
 }

@@ -10,4 +10,9 @@ mk.add({
     desc = "Fuzzy search",
     icon = { icon = " ", color = "blue" },
   },
+  {
+    "-",
+    "<cmd>Oil --float<CR>",
+    desc = "Oil in floating",
+  },
 })
