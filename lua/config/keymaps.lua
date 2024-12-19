@@ -15,4 +15,19 @@ mk.add({
     "<cmd>Oil --float<CR>",
     desc = "Oil in floating",
   },
+  {
+    "<leader>ci",
+    group = "Copilot",
+    icon = { icon = " ", color = "blue" },
+  },
+  {
+    "<leader>cio",
+    "<cmd>Copilot disable<CR>",
+    desc = "Disable Copilot",
+  },
+  {
+    "<leader>cii",
+    "<cmd>Copilot enable<CR>",
+    desc = "Enable Copilot",
+  },
 })
