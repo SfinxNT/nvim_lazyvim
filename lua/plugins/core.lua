@@ -25,4 +25,11 @@ return {
     "nvim-neo-tree/neo-tree.nvim",
     enabled = false,
   },
+  {
+    "folke/which-key.nvim",
+    event = "VeryLazy",
+    opts = {
+      preset = "classic",
+    },
+  },
 }
