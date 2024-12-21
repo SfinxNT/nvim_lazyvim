@@ -1,11 +1,23 @@
 return {
   {
     "folke/snacks.nvim",
-    priority = 1000,
-    lazy = false,
-    opts = function(_, opts)
-      opts.lazygit = { configure = false }
-      local newdesign = [[
+    ---@style snacks.Config
+    opts = {
+      lazygit = { configure = false },
+      zen = {
+        toggles = {
+          dim = true,
+          git_signs = false,
+          mini_diff_signs = false,
+          line_number = false,
+          diagnostics = false,
+          inlay_hints = false,
+          indent = false,
+        },
+      },
+      dashboard = {
+        preset = {
+          header = [[
 
                              ▒▒▒                        
                      '     ▒▒▓▓▓▒▒   ∙         ,        
@@ -19,8 +31,9 @@ return {
     ▒▓▓█▌░░▒▌░▒▐▌░▒▐██▌░▒▐▌░░▒▐▌░░▒▐▌░░░▐████▌░░▒▐▒     
      ▒███▌░▒▐▌░░░▒▐████▌░░░▒▒▌░░░▒▐█▌░░░▒▐█▌░░▒▐█▀      
      ∙ ▀██▌▒▐█▌░▒▐██████▌░▒▐█▌░▒▒▐█▌░░░▒▒▐██████▌∙     ∙
-   ,   ,▐██▌▐██▌▐████████▌▐██████████████████▀ ∙   , ℳ ₧]]
-      opts.dashboard.preset.header = newdesign
-    end,
+   ,   ,▐██▌▐██▌▐████████▌▐██████████████████▀ ∙   , ℳ ₧]],
+        },
+      },
+    },
   },
 }
