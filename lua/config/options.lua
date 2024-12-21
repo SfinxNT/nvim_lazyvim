@@ -20,3 +20,6 @@ vim.g.tome_no_auto = 1
 
 -- Disable cursorline
 vim.o.cursorline = false
+
+-- Disable animate
+vim.g.snacks_animate = false
