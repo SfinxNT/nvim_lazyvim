@@ -7,3 +7,6 @@
 vim.keymap.set("n", "-", "<cmd>Oil --float<CR>", { desc = "Oil in floating" })
 vim.keymap.set("n", "<leader>cio", "<cmd>Copilot disable<CR>", { desc = "Disable Copilot" })
 vim.keymap.set("n", "<leader>cii", "<cmd>Copilot enable<CR>", { desc = "Enable Copilot" })
+vim.keymap.set("n", "<leader>z", function()
+  os.execute("tmux split-window -v -l 10 -c " .. vim.fn.expand("%:p:h"))
+end, { desc = "Tmux split window" })
