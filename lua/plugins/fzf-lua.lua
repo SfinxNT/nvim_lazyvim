@@ -20,6 +20,13 @@ return {
         end,
         desc = "Grep (cwd)",
       },
+      {
+        "<leader>sL",
+        function()
+          require("fzf-lua").live_grep_native({ cwd = vim.fs.joinpath(vim.fn.stdpath("data"), "lazy") })
+        end,
+        desc = "Grep Lazy Data",
+      },
     },
   },
 }
