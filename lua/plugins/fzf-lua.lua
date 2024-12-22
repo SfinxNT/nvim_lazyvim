@@ -27,6 +27,13 @@ return {
         end,
         desc = "Grep Lazy Data",
       },
+      {
+        "<leader>fL",
+        function()
+          require("fzf-lua").files({ cwd = vim.fs.joinpath(vim.fn.stdpath("data"), "lazy") })
+        end,
+        desc = "Find Lazy Files",
+      },
     },
   },
 }
