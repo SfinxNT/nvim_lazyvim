@@ -3,6 +3,9 @@ return {
     "saghen/blink.cmp",
     enabled = true,
     opts = {
+      keymap = {
+        preset = "default",
+      },
       sources = {
         providers = {
           copilot = {
