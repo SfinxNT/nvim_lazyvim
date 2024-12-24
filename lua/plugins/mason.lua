@@ -15,6 +15,7 @@ return {
         "yamlfmt",
         "gopls",
         "shellharden",
+        "trivy",
       },
     },
   },
