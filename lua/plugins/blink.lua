@@ -3,6 +3,11 @@ return {
     "saghen/blink.cmp",
     enabled = true,
     opts = {
+      fuzzy = {
+        prebuilt_binaries = {
+          force_version = "v0.8.2",
+        },
+      },
       keymap = {
         preset = "default",
       },
