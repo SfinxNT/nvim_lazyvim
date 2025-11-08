@@ -23,3 +23,6 @@ vim.o.cursorline = false
 
 -- Disable animate
 vim.g.snacks_animate = false
+
+-- Set spell checker language
+vim.opt.spelllang = { "ru", "en" }
