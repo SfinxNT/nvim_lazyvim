@@ -15,9 +15,6 @@ vim.o.breakindentopt = "sbr"
 -- Set wrap
 vim.wo.wrap = true
 
--- TOME config
-vim.g.tome_no_auto = 1
-
 -- Disable cursorline
 vim.o.cursorline = false
 
